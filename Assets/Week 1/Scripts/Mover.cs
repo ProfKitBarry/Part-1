@@ -20,7 +20,7 @@ public class Mover : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space)) 
         {
-            Instantiate(prefab, transform.position, transform.rotation);
+            Instantiate(prefab, barrel.position, transform.rotation);
         }
     }
 }
