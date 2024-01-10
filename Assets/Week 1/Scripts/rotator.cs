@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotator : MonoBehaviour
+public class Rotator : MonoBehaviour
 {
     public float speed = 30.0f;
     // Start is called before the first frame update
