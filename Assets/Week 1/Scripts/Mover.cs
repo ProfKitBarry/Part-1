@@ -5,7 +5,8 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     float speed = 3f;
-   public GameObject misslePrefab; 
+   public GameObject misslePrefab;
+    public Transform spawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,7 @@ public class Mover : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(misslePrefab);
+            Instantiate(misslePrefab,spawn.position, spawn.rotation);
         }
     }
 }
