@@ -23,5 +23,7 @@ public class Mover : MonoBehaviour
         {
             Instantiate(misslePrefab,spawn.position, spawn.rotation);
         }
+
+        
     }
 }
