@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D rigidbody;
-    public float speed = 5f;
+    public float speed = 500f;
     Vector2 direction;
     void Start()
     {
