@@ -8,19 +8,20 @@ public class Lever : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        door = gameObject.GetComponent<GameObject>();
+        Debug.Log(door.activeInHierarchy);
         door.SetActive(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (door != null)
+        if (door.activeInHierarchy)
         {
-            door.SetActive(true);
+            Debug.Log("Door is open");
+            door.SetActive(false);
         }
         else
         {
-            door = null;
+            door.SetActive(true);
         }
     }
 
