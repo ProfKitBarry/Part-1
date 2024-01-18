@@ -4,22 +4,32 @@ using UnityEngine;
 
 public class Lever : MonoBehaviour
 {
-    GameObject door;
+    public GameObject door;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-       GameObject.SetActive(false);
-     
+
+        if (door.activeInHierarchy == true)
+        {
+            door.SetActive(false);
+        }
+        else
+        {
+             door.SetActive(true);
+
+        }
+        }
+
     }
-    
-}
+
+
