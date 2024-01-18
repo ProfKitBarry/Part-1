@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Missile : MonoBehaviour
+public class Player : MonoBehaviour
 {
-    public Vector2 speed = new Vector2(10, 0);
-    Rigidbody2D rigidbody;
+    Vector2 direction;
+    public Rigidbody2D rigidbody;
+    public float force = 150f;
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
     }
@@ -15,17 +16,17 @@ public class Missile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //transform.Translate(1 + Time.deltaTime, 0, 0);
+        direction.x = Input.GetAxis("Horizontal");
+        direction.y = Input.GetAxis("Vertical");
     }
-
     private void FixedUpdate()
     {
-        rigidbody.MovePosition(rigidbody.position + speed * Time.deltaTime);
+        rigidbody.AddForce(direction* force * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        Debug.Log("player hit something");
     }
-
 }
+
