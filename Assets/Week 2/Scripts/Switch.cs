@@ -23,8 +23,6 @@ public class Switch : MonoBehaviour
     {
         Debug.Log("trigger from: " + collision.gameObject);
         spriteRenderer.color = Color.red;
-        gameObject.SetActive(false);
-        spriteRenderer.enabled = false;
     }
 
     private void OnTriggerExit2D(Collider2D collision)

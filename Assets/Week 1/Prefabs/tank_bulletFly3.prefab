@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7941753669106904378}
   - component: {fileID: 9191373886690513015}
   - component: {fileID: -4349067430481230705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: tank_bulletFly3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9152591d27864dbac001d0f3aa8a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: {x: 10, y: 0}
 --- !u!50 &9191373886690513015
 Rigidbody2D:
   serializedVersion: 4
