@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 4132198719
+    locked: 0
   - name: Road
     uniqueID: 2243157047
     locked: 0
-  - name: Background
-    uniqueID: 4132198719
+  - name: Reservation
+    uniqueID: 1355070055
+    locked: 0
+  - name: Car
+    uniqueID: 2574181317
     locked: 0
