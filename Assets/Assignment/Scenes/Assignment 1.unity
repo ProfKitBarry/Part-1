@@ -1657,7 +1657,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1558884381}
   - component: {fileID: 1558884380}
-  - component: {fileID: 1558884379}
   m_Layer: 0
   m_Name: Sun
   m_TagString: Untagged
@@ -1665,18 +1664,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1558884379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558884378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e30f364384050409b04fa3cbeff9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1558884380
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1787,7 +1774,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1641355960}
   - component: {fileID: 1641355961}
-  - component: {fileID: 1641355962}
   m_Layer: 0
   m_Name: Moon
   m_TagString: Untagged
@@ -1862,18 +1848,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1641355962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641355959}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3e30f364384050409b04fa3cbeff9e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1723434420
 GameObject:
   m_ObjectHideFlags: 0
